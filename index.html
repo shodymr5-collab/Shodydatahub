@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SHODY DATA HUB — choose your network, select a data bundle and request your order in Ghana.">
+<title>SHODY DATA HUB | Data Bundles in Ghana</title>
+<style>
+:root{--navy:#101b3c;--blue:#2458e8;--pale:#f3f6ff;--ink:#17213b;--muted:#68738b;--line:#e5eaf4;--green:#138a54}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{border-bottom:1px solid var(--line);background:#fff}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.4px;color:var(--navy)}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--blue);color:white;font-weight:900;font-size:20px}.navlinks{display:flex;align-items:center;gap:24px;font-size:14px;color:var(--muted)}.navlinks a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;background:var(--blue);color:#fff;padding:12px 17px;font-weight:750;cursor:pointer;min-height:44px}.nav-cta{font-size:14px}
+.hero{background:linear-gradient(125deg,#f2f6ff 0%,#fff 65%);padding:68px 0 56px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);background:#e6edff;padding:8px 12px;border-radius:99px;font-size:12px;font-weight:850;letter-spacing:.5px}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green)}h1{font-size:clamp(38px,5.4vw,64px);line-height:1.04;letter-spacing:-2.6px;margin:20px 0 18px;color:var(--navy)}h1 span{color:var(--blue)}.hero p{font-size:17px;line-height:1.7;color:var(--muted);max-width:540px;margin:0 0 26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}.hero-note{margin-top:17px;font-size:12px;color:var(--muted)}.hero-card{background:var(--navy);color:#fff;padding:26px;border-radius:24px;box-shadow:0 22px 60px #15265d20;position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:#315ce8;opacity:.28;right:-60px;top:-65px}.hero-card>*{position:relative;z-index:1}.card-top{display:flex;justify-content:space-between;align-items:center;color:#cbd5f3;font-size:13px}.signal{font-size:24px}.data-big{font-size:42px;font-weight:900;letter-spacing:-1px;margin:32px 0 4px}.data-sub{color:#cbd5f3;font-size:13px}.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.mini{padding:15px;background:#ffffff12;border:1px solid #ffffff1b;border-radius:14px}.mini b{display:block;font-size:17px}.mini span{font-size:12px;color:#cbd5f3}
+section{padding:60px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 30px}.section-head h2{font-size:clamp(28px,3.5vw,40px);letter-spacing:-1.2px;margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted);line-height:1.6;margin:0}.networks{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.network{border:1px solid var(--line);border-radius:20px;padding:23px;display:flex;align-items:center;gap:16px;text-align:left;background:#fff;cursor:pointer;transition:.18s;min-height:110px}.network:hover,.network.active{border-color:var(--blue);box-shadow:0 8px 28px #2458e812;transform:translateY(-2px)}.network.active{background:#f7f9ff}.network-icon{width:58px;height:58px;display:grid;place-items:center;border-radius:17px;color:#fff;font-size:17px;font-weight:950;flex-shrink:0}.mtn{background:#ffca05;color:#191919}.telecel{background:#e63a4d}.network strong{display:block;font-size:18px}.network small{display:block;color:var(--muted);margin-top:5px}.arrow{margin-left:auto;color:var(--blue);font-size:24px}
+.order-area{background:#f8faff}.order-grid{display:grid;grid-template-columns:1fr .8fr;gap:24px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}.panel h3{margin:0 0 7px;font-size:21px}.muted{color:var(--muted);font-size:14px;line-height:1.55}.field{margin-top:18px}.field label{display:block;font-size:13px;font-weight:800;margin-bottom:8px}.field input,.field select{width:100%;padding:13px 14px;border:1px solid #dce3f0;border-radius:11px;background:#fff;color:var(--ink);font:inherit;min-height:48px}.field input:focus,.field select:focus{outline:3px solid #2458e820;border-color:var(--blue)}.bundle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.bundle{border:1px solid var(--line);border-radius:13px;padding:13px 8px;text-align:center;background:#fff;cursor:pointer}.bundle b{display:block;font-size:17px}.bundle span{display:block;color:var(--muted);font-size:12px;margin-top:5px}.bundle.selected{border:2px solid var(--blue);background:#f3f6ff;padding:12px 7px}.summary{background:var(--navy);color:#fff;border-radius:20px;padding:24px}.summary h3{margin:0 0 20px}.sum-row{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #ffffff20;font-size:14px}.sum-row span:first-child{color:#cbd5f3}.sum-row strong{text-align:right}.total{display:flex;justify-content:space-between;align-items:center;margin:22px 0}.total span{color:#cbd5f3;font-size:14px}.total strong{font-size:27px}.summary .btn{width:100%;background:#25a568;color:#fff}.fine{font-size:11px;line-height:1.5;color:#cbd5f3;margin:13px 0 0}.notice{display:none;margin-top:14px;background:#eaf8f0;color:#145c38;padding:12px;border-radius:10px;font-size:13px;line-height:1.5}.notice.show{display:block}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:23px;border:1px solid var(--line);border-radius:18px}.step-num{width:39px;height:39px;display:grid;place-items:center;background:#e8eeff;color:var(--blue);border-radius:12px;font-weight:900}.step h3{margin:17px 0 8px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}.support{background:#edf2ff;padding:34px;border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.support h2{margin:0 0 8px;color:var(--navy)}.support p{margin:0;color:var(--muted);line-height:1.6}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.disclaimer{font-size:11px;color:var(--muted);line-height:1.5;margin-top:14px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.order-grid{grid-template-columns:1fr}.hero-card{max-width:500px}.networks{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.support{align-items:flex-start;flex-direction:column}.bundle-grid{grid-template-columns:repeat(2,1fr)}section{padding:46px 0}h1{letter-spacing:-1.6px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="SHODY DATA HUB home"><span class="logo">S</span><span>SHODY DATA HUB</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#networks">Networks</a><a href="#order">Buy Data</a><a href="#how">How it works</a><a href="#support">Support</a></nav>
+    <a class="nav-cta" href="#order">Buy Data →</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">YOUR DATA, MADE SIMPLE</span>
+      <h1>Stay connected.<br><span>Go further.</span></h1>
+      <p>Choose your network, pick a data bundle and prepare your order in just a few steps. A simple starting point for data bundles in Ghana.</p>
+      <div class="hero-actions"><a class="btn" href="#order">Choose a Bundle</a><a class="btn secondary" href="#how">How it works</a></div>
+      <div class="hero-note">Prices and order processing must be confirmed before launch.</div>
+    </div>
+    <div class="hero-card">
+      <div class="card-top"><span>SHODY DATA HUB</span><span class="signal">▮▮▮</span></div>
+      <div class="data-big">Stay online.</div><div class="data-sub">Your next bundle is a few steps away.</div>
+      <div class="mini-stats"><div class="mini"><b>2 Networks</b><span>MTN & Telecel</span></div><div class="mini"><b>GHS</b><span>Ghana cedi pricing</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="networks">
+  <div class="wrap">
+    <div class="section-head"><h2>Choose your network</h2><p>Start by selecting the network you want. You can change it at any time before preparing your order.</p></div>
+    <div class="networks">
+      <button type="button" class="network active" data-network="MTN">
+        <span class="network-icon mtn">MTN</span><span><strong>MTN Ghana</strong><small>Choose an MTN data bundle</small></span><span class="arrow">→</span>
+      </button>
+      <button type="button" class="network" data-network="Telecel">
+        <span class="network-icon telecel">T</span><span><strong>Telecel Ghana</strong><small>Choose a Telecel data bundle</small></span><span class="arrow">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="order-area" id="order">
+ <div class="wrap">
+  <div class="section-head"><h2>Build your data order</h2><p>Select a bundle and enter the number that should receive the data.</p></div>
+  <div class="order-grid">
+   <form class="panel" id="orderForm">
+    <h3>Your bundle</h3><p class="muted">Demo prices below are placeholders. Replace them with your real approved selling prices before accepting orders.</p>
+    <div class="field"><label for="networkSelect">Network</label><select id="networkSelect"><option>MTN</option><option>Telecel</option></select></div>
+    <div class="field"><label>Choose data size</label><div class="bundle-grid" id="bundles">
+      <button type="button" class="bundle selected" data-gb="1" data-price="5"><b>1 GB</b><span>GHS 5.00*</span></button>
+      <button type="button" class="bundle" data-gb="2" data-price="9"><b>2 GB</b><span>GHS 9.00*</span></button>
+      <button type="button" class="bundle" data-gb="5" data-price="20"><b>5 GB</b><span>GHS 20.00*</span></button>
+      <button type="button" class="bundle" data-gb="10" data-price="38"><b>10 GB</b><span>GHS 38.00*</span></button>
+      <button type="button" class="bundle" data-gb="20" data-price="72"><b>20 GB</b><span>GHS 72.00*</span></button>
+      <button type="button" class="bundle" data-gb="50" data-price="165"><b>50 GB</b><span>GHS 165.00*</span></button>
+    </div></div>
+    <div class="field"><label for="phone">Recipient phone number</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 0241234567" required></div>
+    <div class="field"><label for="customerName">Your name (optional)</label><input id="customerName" name="customerName" autocomplete="name" placeholder="Enter your name"></div>
+    <button class="btn" type="submit" style="width:100%;margin-top:20px">Prepare Order →</button>
+    <div class="notice" id="notice" role="status" aria-live="polite"></div>
+   </form>
+   <aside class="summary">
+    <h3>Order summary</h3>
+    <div class="sum-row"><span>Network</span><strong id="sumNetwork">MTN</strong></div>
+    <div class="sum-row"><span>Data bundle</span><strong id="sumBundle">1 GB</strong></div>
+    <div class="sum-row"><span>Recipient</span><strong id="sumPhone">Not entered</strong></div>
+    <div class="total"><span>Demo price*</span><strong id="sumPrice">GHS 5.00</strong></div>
+    <button type="button" class="btn" id="whatsappBtn">Continue with WhatsApp</button>
+    <p class="fine">*Sample prices are for design demonstration only and are not verified offers. WhatsApp ordering will work after the business WhatsApp number is configured.</p>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section id="how"><div class="wrap">
+ <div class="section-head"><h2>How it works</h2><p>A clear, simple process helps customers know what happens next.</p></div>
+ <div class="steps">
+  <article class="step"><div class="step-num">1</div><h3>Choose a network</h3><p>Select MTN or Telecel and pick the data size you want to order.</p></article>
+  <article class="step"><div class="step-num">2</div><h3>Enter the number</h3><p>Double-check the recipient phone number and your bundle selection.</p></article>
+  <article class="step"><div class="step-num">3</div><h3>Confirm your order</h3><p>Send the order request to customer support for confirmation and payment instructions.</p></article>
+ </div>
+</div></section>
+
+<section id="support"><div class="wrap"><div class="support"><div><h2>Need a hand?</h2><p>Contact customer support for help with bundles, payments or an order.<br>Business WhatsApp number: to be added before publishing.</p></div><a class="btn" href="#order">Start an Order</a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-row"><strong>SHODY DATA HUB</strong><span>Made for customers in Ghana · Prices in GHS</span></div><p class="disclaimer">SHODY DATA HUB is a proposed independent data sales service. Network names are used to identify the selected network; this page does not imply official affiliation. Do not accept payments until prices, fulfilment arrangements, customer support details and secure payment methods are configured.</p><p>© <span id="year"></span> SHODY DATA HUB</p></div></footer>
+<script>
+(function(){
+ const root=document;
+ let selected={gb:1,price:5};
+ const networkSelect=root.getElementById('networkSelect');
+ const phone=root.getElementById('phone');
+ const name=root.getElementById('customerName');
+ const notice=root.getElementById('notice');
+ const fmt=n=>'GHS '+Number(n).toFixed(2);
+ function update(){
+  root.getElementById('sumNetwork').textContent=networkSelect.value;
+  root.getElementById('sumBundle').textContent=selected.gb+' GB';
+  root.getElementById('sumPhone').textContent=phone.value.trim()||'Not entered';
+  root.getElementById('sumPrice').textContent=fmt(selected.price);
+ }
+ root.querySelectorAll('.network').forEach(btn=>btn.addEventListener('click',()=>{
+  networkSelect.value=btn.dataset.network;
+  root.querySelectorAll('.network').forEach(b=>b.classList.toggle('active',b===btn));
+  update();
+  root.getElementById('order').scrollIntoView({behavior:'smooth',block:'start'});
+ }));
+ networkSelect.addEventListener('change',()=>{
+  root.querySelectorAll('.network').forEach(b=>b.classList.toggle('active',b.dataset.network===networkSelect.value));update();
+ });
+ root.querySelectorAll('.bundle').forEach(btn=>btn.addEventListener('click',()=>{
+  selected={gb:Number(btn.dataset.gb),price:Number(btn.dataset.price)};
+  root.querySelectorAll('.bundle').forEach(b=>b.classList.toggle('selected',b===btn));update();
+ }));
+ phone.addEventListener('input',update);
+ root.getElementById('orderForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const digits=phone.value.replace(/\D/g,'');
+  if(digits.length<9||digits.length>15){notice.textContent='Please enter a valid recipient phone number before continuing.';notice.classList.add('show');return;}
+  notice.textContent='Order details are ready. Review the summary and continue with WhatsApp after the business number has been configured.';notice.classList.add('show');update();
+ });
+ root.getElementById('whatsappBtn').addEventListener('click',()=>{
+  const digits=phone.value.replace(/\D/g,'');
+  if(digits.length<9||digits.length>15){notice.textContent='Enter a valid recipient phone number first.';notice.classList.add('show');phone.focus();return;}
+  notice.textContent='To activate WhatsApp ordering, add your business WhatsApp number in the website code. No payment has been taken.';notice.classList.add('show');
+ });
+ root.getElementById('year').textContent=new Date().getFullYear();update();
+})();
+</script>
+</body>
+</html>
