@@ -159,7 +159,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   const digits=phone.value.replace(/\D/g,'');
   if(digits.length<9||digits.length>15){notice.textContent='Enter a valid recipient phone number first.';notice.classList.add('show');phone.focus();return;}
   const customerName=name.value.trim() || 'Not provided';
-  const message = [
+  
    'Hello SHODY DATA HUB, I would like to place a data bundle order.',
    '',
    'Network: ' + networkSelect.value,
