@@ -151,8 +151,10 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   e.preventDefault();
   const digits=phone.value.replace(/\D/g,'');
   if(digits.length<9||digits.length>15){notice.textContent='Please enter a valid recipient phone number before continuing.';notice.classList.add('show');return;}
-  notice.textContent='Order details are ready. Review the summary and continue with WhatsApp after the business number has been configured.';notice.classList.add('show');update();
- });
+  notice.textContent='Order details are ready. <a class="btn" href="https://shop.kingflexygh.com/shody-data-hub"
+   style="width:100%;margin-top:10px">
+   Buy Data & Pay Now →
+</a>
  root.getElementById('whatsappBtn').addEventListener('click',()=>{
   const digits=phone.value.replace(/\D/g,'');
   if(digits.length<9||digits.length>15){notice.textContent='Enter a valid recipient phone number first.';notice.classList.add('show');phone.focus();return;}
