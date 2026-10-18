@@ -22,7 +22,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <div class="wrap nav">
     <a class="brand" href="#home" aria-label="SHODY DATA HUB home"><span class="logo">S</span><span>SHODY DATA HUB</span></a>
     <nav class="navlinks" aria-label="Main navigation"><a href="#networks">Networks</a><a href="#order">Buy Data</a><a href="#how">How it works</a><a href="#support">Support</a></nav>
-    <a class="nav-cta" href="#order">Buy Data →</a>
+    <a class="nav-cta" href="https://wa.me/233553623383?text=Hello%20SHODY%20DATA%20HUB%2C%20I%20need%20help%20with%20a%20data%20bundle." target="_blank" rel="noopener">WhatsApp Support ↗</a>
   </div>
 </header>
 <main>
@@ -33,7 +33,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
       <h1>Stay connected.<br><span>Go further.</span></h1>
       <p>Choose your network, pick a data bundle and prepare your order in just a few steps. A simple starting point for data bundles in Ghana.</p>
       <div class="hero-actions"><a class="btn" href="#order">Choose a Bundle</a><a class="btn secondary" href="#how">How it works</a></div>
-      <div class="hero-note">Prices and order processing must be confirmed before launch.</div>
+      <div class="hero-note">Need help? Use WhatsApp Support to contact SHODY DATA HUB.</div>
     </div>
     <div class="hero-card">
       <div class="card-top"><span>SHODY DATA HUB</span><span class="signal">▮▮▮</span></div>
@@ -84,7 +84,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <div class="sum-row"><span>Recipient</span><strong id="sumPhone">Not entered</strong></div>
     <div class="total"><span>Demo price*</span><strong id="sumPrice">GHS 5.00</strong></div>
     <button type="button" class="btn" id="whatsappBtn">Continue with WhatsApp</button>
-    <p class="fine">*Sample prices are for design demonstration only and are not verified offers. WhatsApp ordering will work after the business WhatsApp number is configured.</p>
+    <p class="fine">*Sample prices are placeholders and must be confirmed with customers before payment. WhatsApp opens a chat; it does not take payment automatically.</p>
    </aside>
   </div>
  </div>
@@ -99,7 +99,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
  </div>
 </div></section>
 
-<section id="support"><div class="wrap"><div class="support"><div><h2>Need a hand?</h2><p>Contact customer support for help with bundles, payments or an order.<br>Business WhatsApp number: to be added before publishing.</p></div><a class="btn" href="#order">Start an Order</a></div></div></section>
+<section id="support"><div class="wrap"><div class="support"><div><h2>Need a hand?</h2><p>Contact customer support for help with bundles, payments or an order.<br>WhatsApp support: 055 362 3383</p></div><a class="btn" href="https://wa.me/233553623383?text=Hello%20SHODY%20DATA%20HUB%2C%20I%20need%20help%20with%20a%20data%20bundle." target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></div></section>
 </main>
 <footer><div class="wrap"><div class="footer-row"><strong>SHODY DATA HUB</strong><span>Made for customers in Ghana · Prices in GHS</span></div><p class="disclaimer">SHODY DATA HUB is a proposed independent data sales service. Network names are used to identify the selected network; this page does not imply official affiliation. Do not accept payments until prices, fulfilment arrangements, customer support details and secure payment methods are configured.</p><p>© <span id="year"></span> SHODY DATA HUB</p></div></footer>
 <script>
@@ -140,7 +140,22 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
  root.getElementById('whatsappBtn').addEventListener('click',()=>{
   const digits=phone.value.replace(/\D/g,'');
   if(digits.length<9||digits.length>15){notice.textContent='Enter a valid recipient phone number first.';notice.classList.add('show');phone.focus();return;}
-  notice.textContent='To activate WhatsApp ordering, add your business WhatsApp number in the website code. No payment has been taken.';notice.classList.add('show');
+  const customerName=name.value.trim() || 'Not provided';
+  const message = [
+   'Hello SHODY DATA HUB, I would like to place a data bundle order.',
+   '',
+   'Network: ' + networkSelect.value,
+   'Bundle: ' + selected.gb + ' GB',
+   'Displayed price: ' + fmt(selected.price) + ' (please confirm before payment)',
+   'Recipient number: ' + phone.value.trim(),
+   'Customer name: ' + customerName,
+   '',
+   'Please confirm availability, final price, and payment instructions. I understand this message is an order request, not a payment.'
+  ].join('\n');
+  const waUrl='https://wa.me/233553623383?text='+encodeURIComponent(message);
+  window.open(waUrl,'_blank','noopener,noreferrer');
+  notice.textContent='WhatsApp is opening with your order details. Review the message and press Send in WhatsApp. No payment has been taken.';
+  notice.classList.add('show');
  });
  root.getElementById('year').textContent=new Date().getFullYear();update();
 })();
